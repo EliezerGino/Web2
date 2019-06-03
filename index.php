@@ -1,24 +1,3 @@
-<?php 
-@session_start();
-
-include_once('conexao.php');
-
-?>
-
-    <?php 
-if(isset($_POST['gravar'])) {
-    $nome=$_POST['nome'];
-    $email=$_POST['email'];
-    $senha=$_POST['senha'];
-
-
-$sql = $pdo->query("INSERT INTO `tb_sala` (`id`, `nome`, `email`, `senha`) VALUES (NULL, '$nome', '$email', '$senha');");   
-}
-    
-?>
-
-
-
 
 
 <!DOCTYPE html>
@@ -47,8 +26,8 @@ $sql = $pdo->query("INSERT INTO `tb_sala` (`id`, `nome`, `email`, `senha`) VALUE
                                 Que tal aprender sobre programação ou quem sabe redes, mas se não gostar tente design!  
                         </p>
                         <div class="group-btn">
-                        <a href="#" class="theme-btn" data-toggle="modal" data-target="#siteModal">Entrar</a>
-                        <a href="" class="theme-btn">Cadastrar</a>
+                        <a href="login.php" class="theme-btn">Entrar</a>
+                        
                         </div>
                         
                     </div>
@@ -80,23 +59,6 @@ $sql = $pdo->query("INSERT INTO `tb_sala` (`id`, `nome`, `email`, `senha`) VALUE
                 </div>
             </div>
         </div>
-       <div class="modal" id="siteModal" tabindex="-1" role="dialog">
-           <div class="modal-dialog" role = "document">
-               <div class="modal-content">
-                   <div class="modal-header">
-                       <h5 class="modal-title">Modal</h5>
-                       <button type="button" class="close" data-dismiss = "modal"><span>x</span></button>
-                       
-                   </div>
-                   <div class="modal-body">
-                       test
-                   </div>
-                   <div class="modal-footer">
-                       <button type="button" class="btn btn-danger" data-dismiss = "modal">fechar</button>
-                   </div>
-               </div>
-           </div>
-       </div>
     </section>
 </body>
 </html>
