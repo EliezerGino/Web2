@@ -34,7 +34,7 @@
                     <div class="col-lg-6">
                         <div style="margin-top: 130px;"></div>
                         
-                        <img src="Group.svg" class="img-fluid" alt="">
+                        
                         <div class="group">
                             <div class="box">
                                 <i class="fas fa-code"></i>
@@ -54,9 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center">
-                    <a href="#page-2" class="circle"><i class=" fas fa-chevron-down" ></i></a>  
-                </div>
+                
             </div>
         </div>
     </section>
